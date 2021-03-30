@@ -1,0 +1,54 @@
+
+
+
+.header{
+    background-image: url("./portalImage.jpg");
+    font-family: arial;
+    text-align: center;
+    height: 100px;
+    padding-top: 25px;
+    color:black;
+    
+}
+
+.header h1{
+    background-color:greenyellow ;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    
+}
+
+.tarjetas{
+    margin-top: 20px;
+    height: 2800px;
+    
+    
+
+}
+
+.personajes{
+    
+    position: relative;
+    float: left;
+    font-family:monospace;
+    width: 30%;
+    left: 8%;
+    }
+
+.footer{
+        background-image:  url("./portalImage.jpg");
+        height: 100px;
+        text-align: center;
+        padding-top: 50px;
+        font-family: monospace;
+    
+    }
+
+.footer p {
+        background-color: greenyellow;
+        margin-left: 100px;
+        margin-right: 100px;
+        font-size: 20px;
+    }
+
