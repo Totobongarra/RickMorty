@@ -20,6 +20,7 @@
 }
 
 .tarjetas{
+    
     margin-top: 20px;
     height: 2800px;
     
@@ -28,7 +29,7 @@
 }
 
 .personajes{
-    
+    margin-bottom: 20px;
     position: relative;
     float: left;
     font-family:monospace;

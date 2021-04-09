@@ -1,11 +1,21 @@
 import infoRick from "../rickandmorty.json";
 import Tarjetas from "./tarjetas";
-function Main(){
+import React, {Component} from "react";
+
+class Main extends Component{
+    Borrar(id){
+        console.log(id);
+        
+        
+        
+
+    }
+    render(){
     return(
         <div className="tarjetas">
-            {infoRick.map(function(unPersonaje,idx){
+            {infoRick.map ((unPersonaje,idx)=>{
                 return(
-                    <Tarjetas key={idx} info={unPersonaje}/>
+                    <Tarjetas key={idx} info={unPersonaje} colorFondo= "White" borrar={this.Borrar}/>
                 )
             })}
         
@@ -14,6 +24,7 @@ function Main(){
     )
 
 
+}
 };
 
 export default Main;
