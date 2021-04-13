@@ -3,19 +3,29 @@ import Tarjetas from "./tarjetas";
 import React, {Component} from "react";
 
 class Main extends Component{
-    Borrar(id){
-        console.log(id);
-        
-        
+    constructor(){
+        super();
+        this.state={
+            items : infoRick
+
+        }
+    }
+
+    Borrar(idTarjeta){
+        console.log(idTarjeta);
+        let resultado = this.state.items.filter( (item) => {
+            return item.id !== idTarjeta
+        })
+        this.setState({items: resultado})
         
 
     }
     render(){
     return(
         <div className="tarjetas">
-            {infoRick.map ((unPersonaje,idx)=>{
+            {this.state.items.map ((unPersonaje,idx)=>{
                 return(
-                    <Tarjetas key={idx} info={unPersonaje} colorFondo= "White" borrar={this.Borrar}/>
+                    <Tarjetas key={idx} info={unPersonaje} colorFondo= "White" borrar={this.Borrar.bind(this)}/>
                 )
             })}
         
