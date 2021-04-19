@@ -13,6 +13,7 @@ function App() {
         <Main/>
       </div>
       <br/>
+      
       <div className="footer">
         <p>Tomás Bongarrá</p>
       </div>
